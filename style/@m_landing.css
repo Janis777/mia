@@ -1,0 +1,67 @@
+/* mediaquery for mobile */
+/* Make everything resize for phonesizes */
+
+@media only screen and (max-width: 480px) {
+    /* For mobile phones: */
+
+    /* Style Bootstrap Row */
+    .row {
+        /* Make row responsive in every Displaysize (1.5em to left and right side) */
+        margin-top: 4em;
+        margin-bottom: 2em;
+        min-width: 50%;
+    }
+
+    h1 {
+        font-size: 1.80em;
+    }
+
+/* ################################################### */
+    
+/* Style Miri Button */
+#b_edit {
+    font-size: 1em;
+    margin-top: .25em;
+    margin-right: .75em;
+    padding: .25em 1.15em;
+}
+
+/* Style Miri Button */
+#b_timeline {
+    font-size: 1em;
+    margin-top: .25em;
+    margin-right: .75em;
+    padding: .25em 1.15em;
+}
+
+/* Style Miri Button */
+#b_travel {
+    font-size: 1em;
+    margin-top: .25em;
+    margin-right: .75em;
+    padding: .25em 1.15em;
+}
+
+/* ################################################### */
+
+    #greeting {
+        padding: 0 1.5em;
+        font-size: medium;
+        margin-top: 2.5em;
+    }
+
+    #foru {
+        padding: .5em .01em;
+        margin-top: .01em;
+        width: 60%;
+        font-size: medium;
+    }
+
+    /* Style Miri Button */
+    #b_mia {
+        font-size: .95em;
+        margin-top: 1em;
+        margin-right: .5em;
+        padding: .15em 1.15em;
+    }
+}

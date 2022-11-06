@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔗 Include GoogleFonts "Comfortaa" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- 🔗 Include Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- 🔗 Include icon library FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- 🔗 Include local style-files -->
+    <link rel="stylesheet" href="..\style\timeline.css">
+    <link rel="stylesheet" href="..\style\@timeline.css">
+
+    <!-- 🔗 Include local javascript-files -->
+    <script src="..\functions\timeline.js"></script>
+
+    <title>🏓 freshGespielt</title>
+</head>
+<body>
+
+    <!-- 🧱 Add Bootstrap Container -->
+    <div class="container">
+        <!-- 🧱 Add Bootstrap Row -->
+        <div class="row">
+            <!-- 🧱 Add Bootstrap Column -->
+            <div class="col" id="input_card">
+                <div class="">
+                        <br>
+                    <h1><strong>BOCK AUF EINE GESCHICHTE?</strong></h1>
+                        <br>
+                    <button class="b_home" id="b_home" onclick="home()"><strong>HOME</strong></button>
+                        <br>
+                    <p id="greeting">KANNST DU DICH NOCH DARAN ERINNERN?</p>
+                        <br>
+                    <!-- Add Timeline -->
+                    <div class="timeline">
+
+                            <div class="content">
+                            <h2 id="up"><strong>17. JANUAR 2022</strong></h2>
+                            <h5><strong>BUMBLE MATCH!</strong></h5>
+                            <p>
+                                "Huhu! 🌞 Ich fand dein Profil sehr sympathisch und wollte dich fragen,
+                                 ob du Lust hast diese Woche mal einen Kaffee mit mir zu trinken?" <br>
+                                 <br>
+                                 - Miriam Gottschalk
+                            </p>
+                            </div>
+
+                            <div class="content">
+                                <h2 id="down"><strong>23. JANUAR 2022</strong></h2>
+                                <h5><strong>ERSTES DATE</strong></h5>
+                                <p>
+                                    38.337 Schritte vom Cafè Edeltraudt einmal durch Würzburg und zurück <br>
+                                    Aber Übernachtung gab's erst später 😴
+                                </p>
+                            </div>
+
+                            <div class="content">
+                                <h2 id="up"><strong>30. JANUAR 2022</strong></h2>
+                                <h5><strong>SPONTANE LERNPAUSE</strong></h5>
+                                <p>
+                                    Das erste und vorerst letzte <i>spontane</i> Treffen. <br>
+                                    Coffee-To-Go und Spaziergang durch den Ringpark 🚶‍♀️🚶‍♂️
+                                </p>
+                            </div>
+
+                            <div class="content">
+                                <h2 id="down"><strong>FEBRUAR 2022</strong></h2>
+                                <h5><strong>CORONA PAUSE</strong></h5>
+                                <p>
+                                    Alina hat Corona 😷 > Janis flieht nach Coburg <br>
+                                    Janis geht zurück nach Würzburg > Miri hat Corona 😷 <br>
+                                    Joke hat Corona 😷 > Janis flieht nach Coburg <br>
+                                    Luis hat Corona 😷 > Janis flieht nach Würzburg <br>
+                                </p>
+                            </div>
+
+                            <div class="content">
+                                <h2 id="up"><strong>ANFANG MÄRZ 2022</strong></h2>
+                                <h5><strong>DER LOMA SCHOCK</strong></h5>
+                                <p>
+                                    Zufälliges Treffen unter Alkoholeinfluss mit klar unterschiedlichen Auffassungen
+                                </p>
+                            </div>
+
+                            <div class="content">
+                                <h2 id="down"><strong>MITTE MÄRZ 2022</strong></h2>
+                                <h5><strong>BESTE FREUND:INNEN?</strong></h5>
+                                <p>
+                                    Treffen bei Kadoffl 🥔<br>
+                                    Das romantische Interesse steigt jedoch vorerst einseitig
+                                </p>
+                            </div>
+
+                            <div class="content">
+                                <h2 id="up"><strong>01. APRIL 2022</strong></h2>
+                                <h5><strong>DER GEDULDIGE HASE</strong></h5>
+                                <p>
+                                    Kochkurs in Sachen Ofengemüse in der Wölffelstraße 10 <br>
+                                    Aus Spaß wird Ernst und Verquatschen können wir uns sowieso <br>
+                                    "Was hältst du so von Kuscheln?" 🤍 <br>
+                                    Herzklopfen und ein ganz geduldiger erster Kuss 😘
+                                </p>
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* mediaquery for mobile */
+/* Make everything resize for phonesizes */
+
+@media only screen and (max-width: 480px) {
+    /* For mobile phones: */
+
+    /* Style Bootstrap Row */
+    .row {
+        /* Make row responsive in every Displaysize (1.5em to left and right side) */
+        padding: 0 1em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        min-width: 50%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    /* Style Miri Button */
+    #b_home {
+        font-size: 1em;
+        margin-top: .25em;
+        padding: .25em 1.15em;
+    }
+
+    #greeting {
+        font-size: small;
+    }
+
+    .timeline {
+        padding: .5em 1em;
+    }
+
+    .content {
+        padding: .5em 1em;
+        font-size: small;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    h5 {
+        font-size: medium;
+    }
+
+    p {
+        padding: 0 .125em;
+    }
+}

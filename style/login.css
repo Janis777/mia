@@ -9,7 +9,7 @@ body {
     /* Make row responsive in every Displaysize (1.5em to left and right side) */
     padding: 0 1.5em;
     margin: 0 auto;
-    margin-top: 17.5em;
+    margin-top: 15em;
     min-width: 50%;
 }
 
@@ -30,7 +30,8 @@ h1 {
 /* Style Userinputfield */
 #name {
     text-align: center;
-    margin-top: 5em;
+    margin-top: 4.5em;
+    padding: .5em 1.5em;
     width: 65%;
     border: none;
     border-radius: 32px;
@@ -57,6 +58,7 @@ h1 {
 /* Style Passwordinputfield */
 #password {
     text-align: center;
+    padding: .5em 1.5em;
     width: 65%;
     border: none;
     border-radius: 32px;
@@ -84,7 +86,9 @@ h1 {
 #b_login {
     color: #ad31ff;
     text-align: center;
+    font-size: large;
     margin-top: 1em;
+    padding: .5em 1.5em;
     min-width: 10%;
     border: none;
     border-radius: 32px;

@@ -1,29 +1,28 @@
-// Create Login Array
-var username = ["miri", "janis"];
-var password = ["astrid", "justus"];
+// Create Login Object
+var Users = [
+    {
+        username: "miriam",
+        password: "justus"
+    },
+    {
+        username: "janis",
+        password: "astrid"
+    }
+]
 
-// Create function to check Logindata from User
 function check_login() {
+    var username = document.getElementById("name").value
+    var password = document.getElementById("password").value
 
-    // Get Username and Userpassword
-    var user = document.getElementById("name").value;
-    var user_password = document.getElementById("password").value;
-
-    // Check if Username and Userpassword are in Arrays of 'username' and 'password'
-    var checkuser = username.includes(user);
-    var checkpassword = password.includes(user_password);
-
-    // Check if Inputs are in Arrays
-    // IF Userinput is in 'username'
-    if (checkuser = true) {
-        console.log("####### ✔ USERNAME IS VALID #######");
-        // Redirecting to index Page
-        window.location = "index.html"; 
-    // IF Userinput is in 'password'
-    } else if (checkpassword = true) {
-        console.log("####### ✔ PASSWORD IS VALID #######");
-    } else {
-        console.log("####### ❌ USERNAME AND/OR PASSWORD ARE INVALID #######");
-        alert("Ups! Deine Logindaten sind leider falsch... 😕");
+    for (i = 0; i < Users.length; i++) {
+        if (username == Users[i].username && password == Users[i].password) {
+            console.log("####### ✔ USERNAME IS VALID #######");
+            console.log("####### ✔ PASSWORD IS VALID #######");
+            console.log("####### 👥 LOGGED IN AS: " + username + " #######");
+            // Redirecting to index Page
+            window.location = "index.html";
+        } else {
+            console.log("####### ❌ INVALID USERNAME OR PASSWORD #######");
+        }
     }
 }

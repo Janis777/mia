@@ -1,0 +1,17 @@
+/* mediaquery for mobile */
+/* Make everything resize for phonesizes */
+
+@media only screen and (max-width: 480px) {
+    /* For mobile phones: */
+
+    /* Style Bootstrap Row */
+    .row {
+        /* Make row responsive in every Displaysize (1.5em to left and right side) */
+        padding: 0 1.5em;
+        margin: 0 auto;
+        margin-top: 3.25em;
+        margin-bottom: 3em;
+        min-width: 50%;
+    }
+
+}
