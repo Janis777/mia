@@ -1,0 +1,68 @@
+/* mediaquery for mobile */
+/* Make everything resize for phonesizes */
+
+@media only screen and (max-width: 480px) {
+    /* For mobile phones: */
+    
+    h1 {
+        padding: 0 1.5em;
+        margin-top: 1.5em;
+        font-size: x-large;
+    }
+
+    .row {
+        /* Make row responsive in every Displaysize (1.5em to left and right side) */
+        padding: 0 .5em;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        min-width: 50%;
+    }
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+
+    /* Style Cafe-Card */
+    #cafes {
+        display: inline-block; /* Position Cards next to each other */
+        padding: .25rem .25rem;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+
+    h4 {
+        font-size: medium;
+    }
+
+    p1 {
+        margin-bottom: 1em;
+        font-size: small;
+    }
+
+    p {
+        margin-top: .5em;
+        font-size:medium;
+    }
+
+    /* Style Login Button */
+    #b_filter {
+        font-size: large;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        padding: .25em 1.25em;
+        min-width: 10%;
+    }
+
+    /* Style Login Button */
+    #b_home {
+        font-size: large;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        padding: .25em 1.25em;
+        min-width: 10%;
+    }
+}

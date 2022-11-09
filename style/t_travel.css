@@ -4,15 +4,19 @@ body {
     background-color: #2b2b31;
 }
 
+/* ----------------------------------------------------------------------------------------------------------------- */
+
 /* Style Bootstrap Row */
 .row {
     /* Make row responsive in every Displaysize (1.5em to left and right side) */
     padding: 0 1.5em;
     margin: 0 auto;
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: 6em;
+    margin-bottom: 6em;
     min-width: 50%;
 }
+
+/* ----------------------------------------------------------------------------------------------------------------- */
 
 /* Style Input Card */
 #input_card {
@@ -20,14 +24,63 @@ body {
     border-radius: 32px;
     background: #2b2b31;
     box-shadow:  -10px 10px 21px #232328,
-                10px -10px 21px #33333a; 
+                10px -10px 21px #33333a;  
 }
 
-h1 {
-    font-size: xx-large;
-    margin-top: 1.5em;
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.content {
     padding: 0 1.5em;
-    color: #bf8b4c;
+}
+
+/* Style Cafe-Card */
+#cafes {
+    display: inline-block; /* Position Cards next to each other */
+    padding: .5rem .5rem;
+    width: 30%;
+    border-radius: 12px;
+    background: #2b2b31;
+    box-shadow:  2.5px 5px 35px #232328;
+    margin-bottom: 2em;
+    margin-left: 1.5em;
+}
+
+#cafes:hover {
+    box-shadow:  2.5px 5px 35px white,
+                -2.5px 5px 35px white;
+}
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 1em;
+  }
+
+h4 {
+    color: orangered;
+}
+
+p1 {
+    color: rgb(205, 204, 204);
+    margin-bottom: 1em;
+}
+
+p {
+    padding: 0 1.5em;
+    text-align: center;
+    font-size: large;
+    color: rgb(205, 204, 204);
+    margin-bottom: 2em;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+h1 {
+    padding: 0 1.5em;
+    margin-top: 1.5em;
+    font-size: xx-large;
+    color: rgb(205, 204, 204);
 }
 
 #b_home {
@@ -47,7 +100,6 @@ h1 {
     cursor: pointer;
 }
 
-/* Change Miri Button on Hover */
 #b_home:hover {
     color: #ad31ff;
     border: none;
@@ -57,7 +109,8 @@ h1 {
                  -40px -40px 90px #e490ff;
 }
 
-#b_home_janis {
+/* Style Home-Button */
+#b_filter {
     color: #2b2b31;
     text-align: center;
     font-size: large;
@@ -74,8 +127,8 @@ h1 {
     cursor: pointer;
 }
 
-/* Change Miri Button on Hover */
-#b_home_janis:hover {
+/* Change Home Button on Hover */
+#b_filter:hover {
     color: #177245;
     border: none;
     border-radius: 50px;
@@ -83,66 +136,3 @@ h1 {
     box-shadow:  40px 40px 90px #1f995c,
                  -40px -40px 90px #2fc279;
 }
-
-#up {
-    margin-top: .25em;
-    color: #df9bff;
-}
-
-#down {
-    margin-top: .25em;
-    color: #9bffa7;
-}
-
-p {
-    margin: 0 auto;
-    padding: 0 1.5em;
-    width: 75%;
-    margin-bottom: .25em;
-}
-
-#greeting {
-    padding: 0 1.5em;
-    margin-top: 1em;
-    text-align: center;
-    color:rgb(205, 204, 204);
-}
-
-.timeline {
-    padding: .75em 1.5em;
-    margin: 0 auto;
-    margin-top: .5em;
-    margin-bottom: 1.5em;
-    width: 85%;
-    color: rgb(205, 204, 204);
-    border-radius: 32px;
-    background: #2b2b31;
-    box-shadow: inset -10px 10px 21px #232328,
-                inset 10px -10px 21px #33333a;
-    cursor: pointer;
-}
-
-.content {
-    padding: .75em 1.5em;
-    margin: 0 auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 95%;
-    text-align: center;   
-    border-radius: 32px;
-    background: #2b2b31;
-    box-shadow:  -10px 10px 21px #232328,
-                10px -10px 21px #33333a;
-    cursor: pointer;
-}
-
-.content:hover {
-    border-radius: 32px;
-    border: none;
-    background: #2b2b31;
-    box-shadow:  -5px 5px 15px #bd9c73,
-                5px -5px 15px #ffd49b;
-}
-
-
-  

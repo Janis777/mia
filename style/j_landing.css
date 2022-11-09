@@ -32,8 +32,8 @@ h1 {
 
 /* ################################################### */
 
-#b_edit {
-    color: #ad31ff;
+#b_edit_j {
+    color: #177245;
     text-align: center;
     font-size: large;
     margin-right: 2em;
@@ -49,17 +49,17 @@ h1 {
 }
 
 /* Change Miri Button on Hover */
-#b_edit:hover {
+#b_edit_j:hover {
     color: white;
     border-radius: 32px;
     border: none;
-    background: linear-gradient(145deg, #b874e5, #da8aff);
-    box-shadow:  40px 40px 90px #b472e0,
-                 -40px -40px 90px #e490ff;
+    background: linear-gradient(145deg, #348b60, #34be79);
+    box-shadow:  40px 40px 90px #1f995c,
+                 -40px -40px 90px #2fc279;
 }
 
-#b_timeline {
-    color: #ad31ff;
+#b_timeline_j {
+    color: #177245;
     text-align: center;
     font-size: large;
     margin-right: 2em;
@@ -75,17 +75,17 @@ h1 {
 }
 
 /* Change Miri Button on Hover */
-#b_timeline:hover {
+#b_timeline_j:hover {
     color: white;
     border-radius: 32px;
     border: none;
-    background: linear-gradient(145deg, #b874e5, #da8aff);
-    box-shadow:  40px 40px 90px #b472e0,
-                 -40px -40px 90px #e490ff;
+    background: linear-gradient(145deg, #348b60, #34be79);
+    box-shadow:  40px 40px 90px #1f995c,
+                 -40px -40px 90px #2fc279;
 }
 
-#b_travel {
-    color: #ad31ff;
+#b_travel_j {
+    color: #177245;
     text-align: center;
     font-size: large;
     margin-right: 2em;
@@ -101,13 +101,13 @@ h1 {
 }
 
 /* Change Miri Button on Hover */
-#b_travel:hover {
+#b_travel_j:hover {
     color: white;
     border-radius: 32px;
     border: none;
-    background: linear-gradient(145deg, #b874e5, #da8aff);
-    box-shadow:  40px 40px 90px #b472e0,
-                 -40px -40px 90px #e490ff;
+    background: linear-gradient(145deg, #348b60, #34be79);
+    box-shadow:  40px 40px 90px #1f995c,
+                 -40px -40px 90px #2fc279;
 }
 
 /* ################################################### */
@@ -120,12 +120,12 @@ h1 {
     color:rgb(205, 204, 204);
 }
 
-#foru {
+#foru_janis {
     padding: .75em 1.5em;
     margin: 0 auto;
     margin-top: .25em;
     width: 60%;
-    font-size: x-large;
+    font-size: large;
     color: rgb(205, 204, 204);
     border-radius: 32px;
     background: #2b2b31;
@@ -168,11 +168,11 @@ h1 {
 }
 
 /* Style container around week */
-#janisweek {
+#mirisweek {
     padding: .75em 1.5em;
     margin: 0 auto;
     margin-top: .25em;
-    width: 60%;
+    width: 80%;
     font-size: large;
     color: rgb(205, 204, 204);
     border-radius: 32px;
@@ -186,4 +186,5 @@ ul {
     list-style-type: none;
     text-align: left;
     margin-top: 1em;
+    margin-left: -1.25em;
 }

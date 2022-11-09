@@ -23,6 +23,7 @@ function check_login() {
             window.location = "index.html";
         } else {
             console.log("####### ❌ INVALID USERNAME OR PASSWORD #######");
+            window.alert("❌ Ups! Leider sind deine Daten falsch... ")
         }
     }
 }

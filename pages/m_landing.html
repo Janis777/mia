@@ -40,9 +40,9 @@
                     <h1><strong>HEY MIRI!</strong></h1>
                         <br>
                     <!-- 🔍 Add Navbar to whole Page -->
-                    <button class="b_edit" id="b_edit" onclick=""><strong><i class="fa fa-pencil-square-o" aria-hidden="true"></i></strong></button>
+                    <button class="b_edit" id="b_edit" onclick="edit()"><strong><i class="fa fa-pencil-square-o" aria-hidden="true"></i></strong></button>
                     <button class="b_timeline" id="b_timeline" onclick="heart()"><strong><i class="fa fa-heart" aria-hidden="true"></i></strong></button>
-                    <button class="b_travel" id="b_travel" onclick=""><strong><i class="fa fa-globe" aria-hidden="true"></i></strong></button>
+                    <button class="b_travel" id="b_travel" onclick="travel()"><strong><i class="fa fa-globe" aria-hidden="true"></i></strong></button>
                         <br>
                     <p id="greeting">DAS HAT <span class="green" style="color: #177245"><strong>JANIS</strong></span> FÜR DICH</p>
                         <br>
@@ -51,6 +51,21 @@
                         <br>
                     <!-- Use a button to open the snackbar -->
                     <button class="b_mia" id="b_mia" onclick="show_snack()">DAS HABE ICH FÜR DICH</button>
+                        <br>
+                    <p id="week">DAS MACHT <span class="green" style="color: #177245"><strong>JANIS</strong></span> DIESE WOCHE</p>
+                        <br>
+                    <!-- Display the "ForU" Content in an element -->
+                    <div class="janisweek" id="janisweek">
+                        <ul>
+                            <li class="monday" id="monday"><span style="color: #ad31ff">MONTAG</span></li>
+                            <li class="tuesday" id="tuesday"><span style="color: #ad31ff">DIENSTAG</span></li>
+                            <li class="wednesday" id="wednesday"><span style="color: #ad31ff">MITTWOCH</span></li>
+                            <li class="thursday" id="thursday"><span style="color: #ad31ff">DONNERSTAG</span></li>
+                            <li class="friday" id="friday"><span style="color: #ad31ff">FREITAG</span></li>
+                            <li class="saturday" id="saturday"><span style="color: #ad31ff">SAMSTAG</span></li>
+                            <li class="sunday" id="sunday"><span style="color: #ad31ff">SONNTAG</span></li>
+                        </ul>
+                    </div>
                         <br>
                 </div>
             </div>

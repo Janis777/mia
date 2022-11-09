@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔗 Include GoogleFonts "Comfortaa" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- 🔗 Include Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- 🔗 Include icon library FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- 🔗 Include local style-files -->
+    <link rel="stylesheet" href="..\style\m_edit.css">
+    <link rel="stylesheet" href="..\style\@m_edit.css">
+
+    <!-- 🔗 Include local javascript-files -->
+    <script src="..\functions\m_edit.js"></script>
+    <script src="..\functions\pingpong.js"></script>
+
+    <title>🏓 freshGespielt</title>
+</head>
+<body>
+
+    <!-- 🧱 Add Bootstrap Container -->
+    <div class="container">
+        <!-- 🧱 Add Bootstrap Row -->
+        <div class="row">
+            <!-- 🧱 Add Bootstrap Column -->
+            <div class="col" id="input_card">
+                        <br>
+                    <h1><strong>EDIT <span class="green" style="color: #177245">JANIS</span> SEITE</strong></h1>
+                        <br>
+                    <button class="b_home" id="b_home" onclick="home()"><strong>HOME</strong></button>
+                        <br>
+                    <div class="edit_content">
+                        <p id="greeting">DAS HAST <span class="pink" style="color: #ad31ff">DU</span> FÜR <span class="green" style="color: #177245">JANIS</span></p>
+
+                        <input class="for_janis" type="text" id="for_janis" placeholder="💌 FÜR JANIS">
+                        <!-- 👆 Submit Button -->
+                        <button class="b_submit" id="b_submit" onclick="submit_foru()"><i class="fa fa-paper-plane"></i></button>
+                            <br>
+                        <p id="greeting">WAS MACHST <span class="pink" style="color: #ad31ff">DU</span> DIESE WOCHE?</p>
+
+                        <!-- THE WEEK -->
+                        <div class="janisweek" id="janisweek">
+
+                            <!-- MONTAG -->
+                            <!-- ✍ Input Field -->
+                            <input class="week_for_janis" type="text" id="monday_janis" placeholder="MONTAG">
+                            <!-- 👆 Submit Button -->
+                            <button class="b_submit" id="b_submit" onclick="submit_monday()"><i class="fa fa-paper-plane"></i></button>
+
+                            <!-- DIENSTAG -->
+                            <!-- ✍ Input Field -->
+                            <input class="week_for_janis" type="text" id="tuesday_janis" placeholder="DIENSTAG">
+                            <!-- 👆 Submit Button -->
+                            <button class="b_submit" id="b_submit" onclick="submit_tuesday()"><i class="fa fa-paper-plane"></i></button>
+
+                            <!-- MITTWOCH -->
+                            <!-- ✍ Input Field -->
+                            <input class="week_for_janis" type="text" id="wednesday_janis" placeholder="MITTWOCH">
+                            <!-- 👆 Submit Button -->
+                            <button class="b_submit" id="b_submit" onclick="submit_wednesday()"><i class="fa fa-paper-plane"></i></button>
+
+                            <!-- DONNERSTAG -->
+                            <!-- ✍ Input Field -->
+                            <input class="week_for_janis" type="text" id="thursday_janis" placeholder="DONNERSTAG">
+                            <!-- 👆 Submit Button -->
+                            <button class="b_submit" id="b_submit" onclick="submit_thursday()"><i class="fa fa-paper-plane"></i></button>
+
+                            <!-- FREITAG -->
+                            <!-- ✍ Input Field -->
+                            <input class="week_for_janis" type="text" id="friday_janis" placeholder="FREITAG">
+                            <!-- 👆 Submit Button -->
+                            <button class="b_submit" id="b_submit" onclick="submit_friday()"><i class="fa fa-paper-plane"></i></button>
+
+                            <!-- SAMSTAG -->
+                            <!-- ✍ Input Field -->
+                            <input class="week_for_janis" type="text" id="saturday_janis" placeholder="SAMSTAG">
+                            <!-- 👆 Submit Button -->
+                            <button class="b_submit" id="b_submit" onclick="submit_saturday()"><i class="fa fa-paper-plane"></i></button>
+
+                            <!-- SONNTAG -->
+                            <!-- ✍ Input Field -->
+                            <input class="week_for_janis" type="text" id="sunday_janis" placeholder="SONNTAG">
+                            <!-- 👆 Submit Button -->
+                            <button class="b_submit" id="b_submit" onclick="submit_sunday()"><i class="fa fa-paper-plane"></i></button>
+
+                        </div>
+
+                        <!-- 🏓 PING PONG -->
+                        <p id="greeting"><span class="pink" style="color: rgb(204, 22, 22)">🏓 ALL-TIME SCOREBOARD 🏓</span></p>
+
+                        <input class="pingpong" type="text" id="alltime_pingpong_score" placeholder="👧 MIRI : JANIS 👦">
+                        <!-- 👆 Submit Button -->
+                        <button class="b_submit" id="b_submit" onclick="submit_score()"><i class="fa fa-paper-plane"></i></button>
+                            <br>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

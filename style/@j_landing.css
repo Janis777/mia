@@ -1,0 +1,84 @@
+/* mediaquery for mobile */
+/* Make everything resize for phonesizes */
+
+@media only screen and (max-width: 480px) {
+    /* For mobile phones: */
+    /* Style Bootstrap Row */
+    .row {
+        /* Make row responsive in every Displaysize (0.5em to left and right side) */
+        padding: 0 .5em;
+        margin-top: 1.25em;
+        margin-bottom: 1em;
+        min-width: 50%;
+    }
+
+    h1 {
+        margin-top: 1em;
+        font-size: 1.80em;
+    }
+
+    /* Style Edit Button */
+    #b_edit_j {
+        margin-top: .25em;
+        margin-right: .75em;
+    }
+
+    /* Style Timeline Button */
+    #b_timeline_j {
+        margin-top: .25em;
+        margin-right: .75em;
+    }
+
+    /* Style Travel Button */
+    #b_travel_j {
+        margin-top: .25em;
+        margin-right: .75em;
+    }
+
+/* ################################################### */
+    
+
+
+/* ################################################### */
+
+    #greeting {
+        padding: 0 1.5em;
+        font-size: medium;
+        margin-top: 2.5em;
+    }
+
+    #foru_janis {
+        padding: .5em 6.5em;
+        margin-top: .01em;
+        width: 60%;
+        font-size: medium;
+    }
+
+    /* Style Mia Button */
+    #b_mia {
+        font-size: .95em;
+        margin-top: 1em;
+        margin-right: .5em;
+        padding: .15em 1.15em;
+    }
+
+    #week {
+        padding: 0 1.5em;
+        font-size: medium;
+        margin-top: 2.5em;
+    }
+
+    #mirisweek {
+        margin-top: 2em;
+        width: 90%;
+        font-size: small;
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: left;
+        margin-top: 1em;
+        margin-left: -1.25em;
+    }
+
+}

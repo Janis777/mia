@@ -20,6 +20,15 @@
     /* Style Miri Button */
     #b_home {
         font-size: 1em;
+        margin-right: .5em;
+        margin-top: .25em;
+        padding: .25em 1.15em;
+    }
+
+    /* Style Miri Button */
+    #b_home_janis {
+        font-size: 1em;
+        margin-right: .25em;
         margin-top: .25em;
         padding: .25em 1.15em;
     }

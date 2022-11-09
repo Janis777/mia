@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔗 Include GoogleFonts "Comfortaa" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- 🔗 Include Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- 🔗 Include icon library FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- 🔗 Include local style-files -->
+    <link rel="stylesheet" href="..\style\j_landing.css">
+    <link rel="stylesheet" href="..\style\@j_landing.css">
+
+    <!-- 🔗 Include local javascript-files -->
+    <script src="..\functions\quotes.js"></script>
+    <script src="..\functions\m_landing.js"></script>
+    <script src="..\functions\m_edit.js"></script>
+
+    <title>🏓 freshGespielt</title>
+</head>
+<body>
+
+    <!-- 🧱 Add Bootstrap Container -->
+    <div class="container">
+        <!-- 🧱 Add Bootstrap Row -->
+        <div class="row">
+            <!-- 🧱 Add Bootstrap Column -->
+            <div class="col" id="input_card">
+                <div class="">
+                        <br>
+                    <h1><strong>HEY JANIS!</strong></h1>
+                        <br>
+                    <!-- 🔍 Add Navbar to whole Page -->
+                    <button class="b_edit" id="b_edit_j" onclick="edit()"><strong><i class="fa fa-pencil-square-o" aria-hidden="true"></i></strong></button>
+                    <button class="b_timeline" id="b_timeline_j" onclick="heart()"><strong><i class="fa fa-heart" aria-hidden="true"></i></strong></button>
+                    <button class="b_travel" id="b_travel_j" onclick="travel()"><strong><i class="fa fa-globe" aria-hidden="true"></i></strong></button>
+                        <br>
+                    <p id="greeting">DAS HAT <span class="green" style="color: #177245"><strong>MIRI</strong></span> FÜR DICH</p>
+                        <br>
+                    <!-- 💾 Display the "ForU" Content in an element -->
+                    <form>
+                        <span id="foru_janis"></span>
+                        <!-- 📃 Add Javascript -->
+                        <script>
+                            document.getElementById("foru_janis").innerHTML = localStorage.getItem("for_you_janis");
+                        </script>
+                    </form>
+                        <br>
+                    <!-- Use a button to open the snackbar -->
+                    <button class="b_mia" id="b_mia" onclick="show_snack()">DAS HABE ICH FÜR DICH</button>
+                        <br>
+                    <p id="week">DAS MACHT <span class="green" style="color: #177245"><strong>MIRI</strong></span> DIESE WOCHE</p>
+                        <br>
+                    <!-- Display the "week_for_janis" Content in an element -->
+                    <div class="mirisweek" id="mirisweek">
+                        <ul>
+                            <!-- MONTAG -->
+                            <li class="monday" id="monday">
+                                <span style="color: #177245">MONTAG</span>
+                                <!-- 💾 Display the "monday" Content in an element -->
+                                <form>
+                                    <span id="monday_janis"></span>
+                                    <!-- 📃 Add Javascript -->
+                                    <script>
+                                        document.getElementById("monday_janis").innerHTML = localStorage.getItem("monday_for_janis");
+                                    </script>
+                                </form>
+                            </li>
+
+                            <!-- DIENSTAG -->
+                            <li class="tuesday" id="tuesday">
+                                <span style="color: #177245">DIENSTAG</span>
+                                <!-- 💾 Display the "tuesday" Content in an element -->
+                                <form>
+                                    <span id="tuesday_janis"></span>
+                                    <!-- 📃 Add Javascript -->
+                                    <script>
+                                        document.getElementById("tuesday_janis").innerHTML = localStorage.getItem("tuesday_for_janis");
+                                    </script>
+                                </form>
+                            </li>
+
+                            <!-- MITTWOCH -->
+                            <li class="wednesday" id="wednesday">
+                                <span style="color: #177245">MITTWOCH</span>
+                                <!-- 💾 Display the "wednesday" Content in an element -->
+                                <form>
+                                    <span id="wednesday_janis"></span>
+                                    <!-- 📃 Add Javascript -->
+                                    <script>
+                                        document.getElementById("wednesday_janis").innerHTML = localStorage.getItem("wednesday_for_janis");
+                                    </script>
+                                </form>
+                            </li>
+
+                            <!-- DONNERSTAG -->
+                            <li class="thursday" id="thursday">
+                                <span style="color: #177245">DONNERSTAG</span>
+                                <!-- 💾 Display the "wednesday" Content in an element -->
+                                <form>
+                                    <span id="thursday_janis"></span>
+                                    <!-- 📃 Add Javascript -->
+                                    <script>
+                                        document.getElementById("thursday_janis").innerHTML = localStorage.getItem("thursday_for_janis");
+                                    </script>
+                                </form>
+                            </li>
+
+                            <!-- FREITAG -->
+                            <li class="friday" id="friday">
+                                <span style="color: #177245">FREITAG</span>
+                                <!-- 💾 Display the "wednesday" Content in an element -->
+                                <form>
+                                    <span id="friday_janis"></span>
+                                    <!-- 📃 Add Javascript -->
+                                    <script>
+                                        document.getElementById("friday_janis").innerHTML = localStorage.getItem("friday_for_janis");
+                                    </script>
+                                </form>
+                            </li>
+
+                            <!-- SAMSTAG -->
+                            <li class="saturday" id="saturday">
+                                <span style="color: #177245">SAMSTAG</span>
+                                <!-- 💾 Display the "wednesday" Content in an element -->
+                                <form>
+                                    <span id="saturday_janis"></span>
+                                    <!-- 📃 Add Javascript -->
+                                    <script>
+                                        document.getElementById("saturday_janis").innerHTML = localStorage.getItem("saturday_for_janis");
+                                    </script>
+                                </form>
+                            </li>
+
+                            <!-- SONNTAG -->
+                            <li class="sunday" id="sunday">
+                                <span style="color: #177245">SONNTAG</span>
+                                <!-- 💾 Display the "wednesday" Content in an element -->
+                                <form>
+                                    <span id="sunday_janis"></span>
+                                    <!-- 📃 Add Javascript -->
+                                    <script>
+                                        document.getElementById("sunday_janis").innerHTML = localStorage.getItem("sunday_for_janis");
+                                    </script>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                        <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

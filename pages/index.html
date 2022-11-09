@@ -20,6 +20,7 @@
 
     <!-- 🔗 Include local javascript-files -->
     <script src="..\functions\index.js"></script>
+    <script src="..\functions\pingpong.js"></script>
 
     <title>🏓 freshGespielt</title>
 </head>
@@ -42,14 +43,28 @@
                     <p id="demo"></p>
                         <br>
                         <br>
-                        <br>                 
-                    <p2 id="ident">DU BIST?</p2>
+                    <!-- 🏓 All-Time PingPong Score -->
+                    <p3 id="scoreboard"><span class="pink" style="color: rgb(204, 22, 22)">🏓 ALL-TIME SCOREBOARD 🏓</span></p3>
                         <br>
+                        <br>
+                    <p4 id="miri_janis"><span class="pink" style="color: #ad31ff">MIRI</span> : <span class="green" style="color: #177245">JANIS</span></p4>
+                        <br>
+                        <br>
+                        <br>
+                    <!-- 🏓 All-Time PingPong Score -->
+                    <form>
+                        <span id="pingpong"></span>
+                        <!-- 📃 Add Javascript -->
+                        <script>
+                            document.getElementById("pingpong").innerHTML = localStorage.getItem("pingpong_score");
+                        </script>
+                    </form>
+                        <br>  
+                        <br>      
+                    <p2 id="ident">DU BIST?</p2>
                         <br>
                     <button class="b_miri" id="b_miri" onclick="miriam()"><strong>MIRI</strong></button>
                     <button class="b_janis" id="b_janis" onclick="janis()"><strong>JANIS</strong></button>
-                        <br>
-                        <br>
                         <br>
                         <br>
                         <br>
