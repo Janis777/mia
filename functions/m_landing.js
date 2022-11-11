@@ -19,5 +19,5 @@ function index() {
 // Create function to redirect onclick
 function edit_miris_landing() {
     // Redirecting to timeline Page
-    window.location = "m_edit.html"; 
+    window.location = "j_edit.html"; 
 }

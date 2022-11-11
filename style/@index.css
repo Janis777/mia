@@ -7,7 +7,7 @@
     /* Style Bootstrap Row */
     .row {
         /* Make row responsive in every Displaysize (1.5em to left and right side) */
-        margin-top: 1.25em;
+        margin-top: 1.75em;
         margin-bottom: 1em;
         min-width: 50%;
     }
@@ -56,6 +56,7 @@
     /* Style Miri Button */
     #b_miri {
         margin-top: 1em;
+        font-size: large;
         margin-right: .5em;
         padding: .15em 1.15em;
     }
@@ -63,6 +64,7 @@
     /* Style Janis Button */
     #b_janis {
         margin-top: 1em;
+        font-size: large;
         padding: .15em 1.15em;
     }
 
