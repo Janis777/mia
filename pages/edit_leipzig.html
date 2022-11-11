@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔗 Include GoogleFonts "Comfortaa" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- 🔗 Include Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- 🔗 Include icon library FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- 🔗 Include local style-files -->
+    <link rel="stylesheet" href="..\style\edit_leipzig.css">
+    <link rel="stylesheet" href="..\style\@edit_leipzig.css">
+
+    <!-- 🔗 Include local javascript-files -->
+    <script src="..\functions\edit_leipzig.js"></script>
+
+    <title>🏓 freshGespielt</title>
+</head>
+<body>
+
+    <!-- 🧱 Add Bootstrap Container -->
+    <div class="container">
+        <!-- 🧱 Add Bootstrap Row -->
+        <div class="row">
+            <!-- 🧱 Add Bootstrap Column -->
+            <div class="col" id="input_card">
+
+                <h1><strong>LEIPZIG</strong></h1>
+                <button class="b_home" id="b_home" onclick="home_leipzig()"><strong>HOME</strong></button>
+
+                    <br>
+
+                <!-- ÜBER LEIPZIG -->
+                <p id="greeting"><span style="color: mediumseagreen">INTERESSANTES</span></p>
+                <!-- ✍ Input Field -->
+                <input class="edit_about_leipzig" type="text" id="edit_about_leipzig" placeholder="ÜBER 🏙 LEIPZIG">
+                <!-- 👆 Submit Button -->
+                <button class="b_submit" id="b_submit" onclick="submit_about_leipzig()"><i class="fa fa-paper-plane"></i></button>
+
+                <!-- FÜR WOHNUNG -->
+                <p id="greeting"><span style="color: mediumseagreen">INTERESSANTES</span></p>
+                <!-- ✍ Input Field -->
+                <input class="edit_about_leipzig" type="text" id="edit_for_room" placeholder="FÜR 🏘 WOHNUNG">
+                <!-- 👆 Submit Button -->
+                <button class="b_submit" id="b_submit" onclick="submit_for_room()"><i class="fa fa-paper-plane"></i></button>
+
+                <!-- UNSER LEBEN -->
+                <p id="greeting"><span style="color: mediumseagreen">INTERESSANTES</span></p>
+                <!-- ✍ Input Field -->
+                <input class="edit_about_leipzig" type="text" id="edit_our_life" placeholder="FÜR ❤ UNSER LEBEN">
+                <!-- 👆 Submit Button -->
+                <button class="b_submit" id="b_submit" onclick="submit_our_life()"><i class="fa fa-paper-plane"></i></button>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

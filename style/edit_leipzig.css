@@ -1,0 +1,131 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #2b2b31;
+}
+
+/* Style Bootstrap Row */
+.row {
+    /* Make row responsive in every Displaysize (1.5em to left and right side) */
+    padding: 0 1.5em;
+    margin: 0 auto;
+    margin-top: 6em;
+    margin-bottom: 6em;
+    min-width: 50%;
+}
+
+/* Style Input Card */
+#input_card {
+    text-align: center;   
+    border-radius: 32px;
+    background: #2b2b31;
+    box-shadow:  -10px 10px 21px #232328,
+                10px -10px 21px #33333a; 
+}
+
+/* ############################################################################################ */
+
+h1 {
+    font-size: xx-large;
+    margin-top: 1.5em;
+    padding: 0 1.5em;
+    color: rgb(205, 204, 204);
+}
+
+/* Style Miri Button */
+#b_home {
+    color: mediumaquamarine;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 1em;
+    padding: .25em 1.25em;
+    min-width: 10%;
+    border: none;
+    border-radius: 32px;
+    background: #2b2b31;
+    box-shadow:  -14px 14px 28px #232328,
+                14px -14px 28px #33333a;
+    cursor: pointer;
+}
+
+/* Change Miri Button on Hover */
+#b_home:hover {
+    color: white;
+    border-radius: 32px;
+    border: none;
+    background: linear-gradient(145deg, rgb(122, 221, 188), rgb(90, 215, 174));
+    box-shadow:  40px 40px 90px rgb(122, 221, 188),
+                 -40px -40px 90px rgb(122, 221, 188);
+}
+
+#greeting {
+    padding: 0 1.5em;
+    margin-top: 2em;
+    margin-right: 1em;
+    font-size: large;
+    text-align: center;
+    color:rgb(205, 204, 204);
+}
+
+/* ############################################################################################ */
+
+#greeting {
+    padding: 0 1.5em;
+    margin-top: 2em;
+    font-size: large;
+    text-align: center;
+    color:rgb(205, 204, 204);
+}
+
+#b_submit {
+    color: mediumseagreen;
+    text-align: center;
+    font-size: large;
+    padding: .25em .5em;
+    min-width: 7.5%;
+    border: none;
+    border-radius: 32px;
+    background: #2b2b31;
+    box-shadow:  -14px 14px 28px #232328,
+                14px -14px 28px #33333a;
+    cursor: pointer;
+}
+
+/* Change Miri Button on Hover */
+#b_submit:hover {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(145deg, rgb(122, 221, 188), rgb(90, 215, 174));
+    box-shadow:  40px 40px 90px rgb(122, 221, 188),
+                 -40px -40px 90px rgb(122, 221, 188);
+}
+
+/* Style Userinputfield */
+.edit_about_leipzig {
+    text-align: center;
+    padding: .5em 1.5em;
+    margin-top: 1em;
+    width: 65%;
+    border: none;
+    border-radius: 32px;
+    background: #2b2b31;
+    box-shadow: inset -10px 10px 21px #232328,
+                inset 10px -10px 21px #33333a;
+}
+
+/* Change Userinputfield on focus */
+.about_ledit_about_leipzigeipzig:focus {
+    color: white;
+    border: none;
+    border-radius: 32px;
+}
+
+/* Change Placehold Color on focus */
+.edit_about_leipzig:focus::-webkit-input-placeholder {
+    color: white;
+}
+
+#edit_our_life {
+    margin-bottom: 2em;
+}

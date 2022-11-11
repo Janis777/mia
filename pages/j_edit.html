@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- 🔗 Include local style-files -->
-    <link rel="stylesheet" href="..\style\m_edit.css">
+    <link rel="stylesheet" href="..\style\j_edit.css">
     <link rel="stylesheet" href="..\style\@m_edit.css">
 
     <!-- 🔗 Include local javascript-files -->
-    <script src="..\functions\m_edit.js"></script>
+    <script src="..\functions\j_edit.js"></script>
     <script src="..\functions\pingpong.js"></script>
 
     <title>🏓 freshGespielt</title>
@@ -36,62 +36,61 @@
             <!-- 🧱 Add Bootstrap Column -->
             <div class="col" id="input_card">
                         <br>
-                    <h1><strong>EDIT <span class="green" style="color: #177245">JANIS</span> SEITE</strong></h1>
+                    <h1><strong>EDIT <span class="green" style="color: #ad31ff">MIRIS</span> SEITE</strong></h1>
                         <br>
-                    <button class="b_home" id="b_home" onclick="home()"><strong>HOME</strong></button>
+                    <button class="b_home" id="b_home" onclick="home_janis()"><strong>HOME</strong></button>
                         <br>
                     <div class="edit_content">
-                        <p id="greeting">DAS HAST <span class="pink" style="color: #ad31ff">DU</span> FÜR <span class="green" style="color: #177245">JANIS</span></p>
+                        <p id="greeting">DAS HAST <span class="pink" style="color: #177245"><b>DU</b></span> FÜR <span class="green" style="color: #ad31ff">MIRI</span></p>
 
-                        <input class="for_janis" type="text" id="for_janis" placeholder="💌 FÜR JANIS">
-                        <!-- id="for_janis" wird in m_edit.js benötigt -->
+                        <input class="for_miri" type="text" id="for_miri" placeholder="💌 FÜR MIRI">
                         <!-- 👆 Submit Button -->
-                        <button class="b_submit" id="b_submit" onclick="submit_foru()"><i class="fa fa-paper-plane"></i></button>
+                        <button class="b_submit" id="b_submit" onclick="submit_for_miri()"><i class="fa fa-paper-plane"></i></button>
                             <br>
-                        <p id="greeting">WAS MACHST <span class="pink" style="color: #ad31ff">DU</span> DIESE WOCHE?</p>
+                        <p id="greeting">WAS MACHST <span class="pink" style="color: #177245"><b>DU</b></span> DIESE WOCHE?</p>
 
                         <!-- THE WEEK -->
                         <div class="janisweek" id="janisweek">
 
                             <!-- MONTAG -->
                             <!-- ✍ Input Field -->
-                            <input class="week_for_janis" type="text" id="monday_janis" placeholder="MONTAG">
+                            <input class="week_for_janis" type="text" id="monday_miri" placeholder="MONTAG">
                             <!-- 👆 Submit Button -->
                             <button class="b_submit" id="b_submit" onclick="submit_monday()"><i class="fa fa-paper-plane"></i></button>
 
                             <!-- DIENSTAG -->
                             <!-- ✍ Input Field -->
-                            <input class="week_for_janis" type="text" id="tuesday_janis" placeholder="DIENSTAG">
+                            <input class="week_for_janis" type="text" id="tuesday_miri" placeholder="DIENSTAG">
                             <!-- 👆 Submit Button -->
                             <button class="b_submit" id="b_submit" onclick="submit_tuesday()"><i class="fa fa-paper-plane"></i></button>
 
                             <!-- MITTWOCH -->
                             <!-- ✍ Input Field -->
-                            <input class="week_for_janis" type="text" id="wednesday_janis" placeholder="MITTWOCH">
+                            <input class="week_for_janis" type="text" id="wednesday_miri" placeholder="MITTWOCH">
                             <!-- 👆 Submit Button -->
                             <button class="b_submit" id="b_submit" onclick="submit_wednesday()"><i class="fa fa-paper-plane"></i></button>
 
                             <!-- DONNERSTAG -->
                             <!-- ✍ Input Field -->
-                            <input class="week_for_janis" type="text" id="thursday_janis" placeholder="DONNERSTAG">
+                            <input class="week_for_janis" type="text" id="thursday_miri" placeholder="DONNERSTAG">
                             <!-- 👆 Submit Button -->
                             <button class="b_submit" id="b_submit" onclick="submit_thursday()"><i class="fa fa-paper-plane"></i></button>
 
                             <!-- FREITAG -->
                             <!-- ✍ Input Field -->
-                            <input class="week_for_janis" type="text" id="friday_janis" placeholder="FREITAG">
+                            <input class="week_for_janis" type="text" id="friday_miri" placeholder="FREITAG">
                             <!-- 👆 Submit Button -->
                             <button class="b_submit" id="b_submit" onclick="submit_friday()"><i class="fa fa-paper-plane"></i></button>
 
                             <!-- SAMSTAG -->
                             <!-- ✍ Input Field -->
-                            <input class="week_for_janis" type="text" id="saturday_janis" placeholder="SAMSTAG">
+                            <input class="week_for_janis" type="text" id="saturday_miri" placeholder="SAMSTAG">
                             <!-- 👆 Submit Button -->
                             <button class="b_submit" id="b_submit" onclick="submit_saturday()"><i class="fa fa-paper-plane"></i></button>
 
                             <!-- SONNTAG -->
                             <!-- ✍ Input Field -->
-                            <input class="week_for_janis" type="text" id="sunday_janis" placeholder="SONNTAG">
+                            <input class="week_for_janis" type="text" id="sunday_miri" placeholder="SONNTAG">
                             <!-- 👆 Submit Button -->
                             <button class="b_submit" id="b_submit" onclick="submit_sunday()"><i class="fa fa-paper-plane"></i></button>
 
@@ -106,9 +105,9 @@
                             <br>
 
                         <!-- 🎤 FAVORIT SONG -->
-                        <p id="greeting">WAS HÖRST <span class="pink" style="color: #ad31ff">DU</span> GERADE?</p>
+                        <p id="greeting">WAS HÖRST <span class="pink" style="color: #177245"><b>DU</b></span> GERADE?</p>
                         <!-- ✍ Input Field -->
-                        <input class="pingpong" type="text" id="song_janis" placeholder="LIEBLINGSSONG">
+                        <input class="pingpong" type="text" id="song_miri" placeholder="LIEBLINGSSONG">
                         <!-- 👆 Submit Button -->
                         <button class="b_submit" id="b_submit" onclick="submit_song()"><i class="fa fa-paper-plane"></i></button>
                             <br>

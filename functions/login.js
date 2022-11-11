@@ -21,9 +21,12 @@ function check_login() {
             console.log("####### 👥 LOGGED IN AS: " + username + " #######");
             // Redirecting to index Page
             window.location = "index.html";
+            return false;
         } else {
             console.log("####### ❌ INVALID USERNAME OR PASSWORD #######");
-            window.alert("❌ Ups! Leider sind deine Daten falsch... ")
+            // Refresh login Page
+            window.location = "login.html";
+            /* window.alert("❌ Ups! Leider sind deine Daten falsch... ") */
         }
     }
 }

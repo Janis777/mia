@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔗 Include GoogleFonts "Comfortaa" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- 🔗 Include Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- 🔗 Include icon library FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- 🔗 Include local style-files -->
+    <link rel="stylesheet" href="..\style\leipzig.css">
+    <link rel="stylesheet" href="..\style\@leipzig.css">
+
+    <!-- 🔗 Include local javascript-files -->
+    <script src="..\functions\leipzig.js"></script>
+
+    <title>🏓 freshGespielt</title>
+</head>
+<body>
+
+    <!-- 🧱 Add Bootstrap Container -->
+    <div class="container">
+        <!-- 🧱 Add Bootstrap Row -->
+        <div class="row">
+            <!-- 🧱 Add Bootstrap Column -->
+            <div class="col" id="input_card">
+
+                <h1><strong>LEIPZIG</strong></h1>
+                <button class="b_home" id="b_home" onclick="home_index()"><strong>HOME</strong></button>
+                <button class="b_home" id="b_home" onclick="home_edit()"><strong>EDIT</strong></button>
+                <p id="greeting">DAS SIND UNSERE IDEEN</p>
+
+                <p id="greeting"><span style="color: mediumseagreen">ÜBER LEIPZIG</span></p>
+                <!-- 💾 Display the "ForU" Content in an element -->
+                <form>
+                    <span id="about_leipzig"></span>
+                    <!-- 📃 Add Javascript -->
+                    <script>
+                        document.getElementById("about_leipzig").innerHTML = localStorage.getItem("about_leipzig");
+                    </script>
+                </form>
+
+                <p id="greeting"><span style="color: mediumseagreen">FÜR WOHNUNG</span></p>
+                <!-- 💾 Display the "ForU" Content in an element -->
+                <form>
+                    <span id="for_room"></span>
+                    <!-- 📃 Add Javascript -->
+                    <script>
+                        document.getElementById("for_room").innerHTML = localStorage.getItem("for_room");
+                    </script>
+                </form>
+
+                <p id="greeting"><span style="color: mediumseagreen">UNSER LEBEN</span></p>
+                <!-- 💾 Display the "ForU" Content in an element -->
+                <form>
+                    <span id="our_life"></span>
+                    <!-- 📃 Add Javascript -->
+                    <script>
+                        document.getElementById("our_life").innerHTML = localStorage.getItem("our_life");
+                    </script>
+                </form>
+
+                    <br>
+                    <br>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

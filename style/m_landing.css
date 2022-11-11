@@ -110,6 +110,31 @@ h1 {
                  -40px -40px 90px #e490ff;
 }
 
+#b_home {
+    color: #ad31ff;
+    text-align: center;
+    font-size: large;
+    margin-top: 1em;
+    padding: .25em 1.25em;
+    min-width: 10%;
+    border: none;
+    border-radius: 32px;
+    background: #2b2b31;
+    box-shadow:  -14px 14px 28px #232328,
+                14px -14px 28px #33333a;
+    cursor: pointer;
+}
+
+/* Change Miri Button on Hover */
+#b_home:hover {
+    color: white;
+    border-radius: 32px;
+    border: none;
+    background: linear-gradient(145deg, #b874e5, #da8aff);
+    box-shadow:  40px 40px 90px #b472e0,
+                 -40px -40px 90px #e490ff;
+}
+
 /* ################################################### */
 
 #greeting {
@@ -120,18 +145,25 @@ h1 {
     color:rgb(205, 204, 204);
 }
 
-#foru {
+#container_foru {
     padding: .75em 1.5em;
     margin: 0 auto;
     margin-top: .25em;
-    width: 60%;
-    font-size: x-large;
+    width: 80%;
+    font-size: large;
     color: rgb(205, 204, 204);
     border-radius: 32px;
     background: #2b2b31;
     box-shadow: inset -10px 10px 21px #232328,
                 inset 10px -10px 21px #33333a;
     cursor: pointer;
+}
+
+#foru_miri {
+    text-align: center;
+    width: 90%;
+    font-size: large;
+    color: rgb(205, 204, 204);
 }
 
 #b_mia {
@@ -186,4 +218,25 @@ ul {
     list-style-type: none;
     text-align: left;
     margin-top: 1em;
+}
+
+#container_song {
+    padding: .75em 1.5em;
+    margin: 0 auto;
+    margin-top: .25em;
+    width: 80%;
+    font-size: large;
+    color: rgb(205, 204, 204);
+    border-radius: 32px;
+    background: #2b2b31;
+    box-shadow: inset -10px 10px 21px #232328,
+                inset 10px -10px 21px #33333a;
+    cursor: pointer;
+}
+
+#song_miri {
+    text-align: center;
+    width: 90%;
+    font-size: large;
+    color: rgb(205, 204, 204);
 }

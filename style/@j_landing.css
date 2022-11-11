@@ -17,27 +17,38 @@
         font-size: 1.80em;
     }
 
+/* ################################################### */
+
     /* Style Edit Button */
     #b_edit_j {
+        font-size: 1em;
         margin-top: .25em;
         margin-right: .75em;
+        padding: .25em 1.15em;
     }
 
     /* Style Timeline Button */
     #b_timeline_j {
+        font-size: 1em;
         margin-top: .25em;
         margin-right: .75em;
+        padding: .25em 1.15em;
     }
 
     /* Style Travel Button */
     #b_travel_j {
+        font-size: 1em;
         margin-top: .25em;
         margin-right: .75em;
+        padding: .25em 1.15em;
     }
 
-/* ################################################### */
-    
-
+    /* Style Travel Button */
+    #b_home_j {
+        font-size: 1em;
+        margin-top: .25em;
+        padding: .25em 1.15em;
+    }
 
 /* ################################################### */
 
@@ -47,11 +58,15 @@
         margin-top: 2.5em;
     }
 
-    #foru_janis {
-        padding: .5em 6.5em;
+    #container_foru {
+        padding: .5em 1.5em;
+        width: 90%;
         margin-top: .01em;
-        width: 60%;
         font-size: medium;
+    }
+
+    #foru_janis {
+        font-size: small;
     }
 
     /* Style Mia Button */
@@ -69,7 +84,6 @@
     }
 
     #mirisweek {
-        margin-top: 2em;
         width: 90%;
         font-size: small;
     }
@@ -79,6 +93,17 @@
         text-align: left;
         margin-top: 1em;
         margin-left: -1.25em;
+    }
+
+    #container_song {
+        padding: .5em 1.5em;
+        width: 90%;
+        margin-top: .01em;
+        font-size: medium;
+    }
+
+    #song_janis {
+        font-size: small;
     }
 
 }
